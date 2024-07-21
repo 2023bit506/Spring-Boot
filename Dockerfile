@@ -5,7 +5,7 @@ FROM eclipse-temurin:17-jdk-alpine
 VOLUME /tmp
 
 # Copy the Spring Boot application JAR
-COPY target/*.jar app.jar
+COPY target/*.jar employee.jar
 
 # Set the entrypoint to run your application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "employee.jar"]
